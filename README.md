@@ -11,14 +11,14 @@
 
 * classify_novels.py
 * classify\_novel\_files.ipynb
-* classify\_novel/
-* morpheme\_list/
+* SVM_classify.ipynb
+* colloct_original.py
 * README.md
 
 ##### ファイルの詳細(上から順に)
 
 * 910 ~ 919 までの本のタイトルを分類し，txtとしてまとめるプログラム．今回の実験で学習用として使用されたデータの分類ごとの一覧表のようなものである．ここで出力されたファイルに名前のない本は今回の試行には使用されていないものとする．
 * 形態素解析された全青空文庫6GMのcsv(aozora\_word\_list\_utf8.csv)を910 ~ 919までの本のみを選び，本のidごとに分類分けするためのプログラムとなっている．
-* classify_novelsの出力結果ファイルとなっている．
-* classify\_novel_files.ipynbの出力結果ファイルとなっている．
+* tf-idfで重み付け等の処理を行い，本の分類予測をSVM分類器に任せたプログラム.
+* 指定した分類と数だけ本のオリジナル版をwebからダウンロードしてきてくれる．ダウンロードしたファイルは  "./original_data/本の分類名(910とか)/" のディレクトリに落とされる
 * このmd本体のことである．
